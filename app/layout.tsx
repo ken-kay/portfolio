@@ -7,6 +7,7 @@ const kaushan_script = Kaushan_Script({subsets:['latin'], weight: ['400']})
 const permanent_marker = Permanent_Marker({subsets:['latin'], weight: ['400']})
 
 import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'Kenani',
@@ -32,6 +33,8 @@ export default function RootLayout({
         <Navbar />
 
         {children}
+
+        <Footer />
 
       </body>
     </html>

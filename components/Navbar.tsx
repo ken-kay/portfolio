@@ -11,9 +11,9 @@ import {
 import { 
     SiTaichigraphics
     } from "react-icons/si";
-import { 
+// import { 
     
-    } from "react-icons/gi";
+//     } from "react-icons/gi";
 import { 
     IoText
     } from "react-icons/io5";
@@ -25,7 +25,7 @@ import Image from 'next/image'
 
 export const Navbar = () => {
     return(
-        <header>
+        <header className="sticky top-0">
              <ul className="menu flex">
                 <li className="menu_list">
                     <span className="front">
