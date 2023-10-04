@@ -22,7 +22,7 @@ import Image from 'next/image'
 
 export const Footer = () => {
     return(
-        <footer>
+        <footer className="fixed bottom-0 right-0 left-0">
             <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
             <ul className="mx-auto p-4 flex flex-col text-center md:flex-row md:justify-between">
                 <li><a href="/">Home</a></li>

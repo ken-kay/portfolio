@@ -1,16 +1,13 @@
 import './globals.css'
 import './sassy.sass'
+
 import type { Metadata } from 'next'
+import ClientSide from '@/components/ClientSide'
 
 import { Poppins, Kaushan_Script, Permanent_Marker } from 'next/font/google'
 const poppins = Poppins({ subsets: ['devanagari', 'latin', 'latin-ext'], weight: [ '100', '200', '300', '400', '500', '600', '700', '800', '900' ] })
 const kaushan_script = Kaushan_Script({subsets:['latin'], weight: ['400']})
 const permanent_marker = Permanent_Marker({subsets:['latin'], weight: ['400']})
-
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import Firefly from '@/components/Firefly'
-
 
 export const metadata: Metadata = {
   title: 'Kenani',
@@ -33,14 +30,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
+        <ClientSide />
 
-        <Firefly />
+          {children}
 
-        {children}
-
-        <Footer />
-
+        {/* </ClientSide> */}
       </body>
     </html>
   )
