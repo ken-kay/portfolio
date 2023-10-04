@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import { ThemeProvider } from 'next-themes'
 
@@ -20,7 +20,7 @@ export default function ClientSide() {
 
           {/* {children} */}
 
-          <Footer />
+          
 
         </ThemeProvider>
     )

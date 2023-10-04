@@ -1,3 +1,6 @@
+// "use client"
+
+import Image from 'next/image'
 // import { IconName } from "react-icons/fa";
 import { 
     AiOutlineHome, 
@@ -21,11 +24,10 @@ import {
     RiContactsLine 
     } from "react-icons/ri";
 
-import Image from 'next/image'
 
 export const Navbar = () => {
     return(
-        <header className="sticky top-0">
+        <header className="sticky top-0 left-0 z-69">
              <ul className="menu flex">
                 <li className="menu_list">
                     <span className="front">
@@ -49,7 +51,7 @@ export const Navbar = () => {
                     <span className="front">
                         <AiOutlineCode />
                     </span>
-                        <a href="#" className="side">code</a>
+                        <a href="/code" className="side">code</a>
                 </li>
                 <li className="menu_list">
                     <span className="front">

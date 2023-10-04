@@ -3,6 +3,7 @@ import './sassy.sass'
 
 import type { Metadata } from 'next'
 import ClientSide from '@/components/ClientSide'
+import Footer from '@/components/Footer'
 
 import { Poppins, Kaushan_Script, Permanent_Marker } from 'next/font/google'
 const poppins = Poppins({ subsets: ['devanagari', 'latin', 'latin-ext'], weight: [ '100', '200', '300', '400', '500', '600', '700', '800', '900' ] })
@@ -35,6 +36,7 @@ export default function RootLayout({
           {children}
 
         {/* </ClientSide> */}
+        <Footer />
       </body>
     </html>
   )
