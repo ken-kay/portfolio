@@ -1,5 +1,3 @@
-// "use client"
-
 import { useTheme } from 'next-themes'
 
 import { RiMoonFill, RiSunLine } from 'react-icons/ri'
@@ -7,10 +5,10 @@ import { RiMoonFill, RiSunLine } from 'react-icons/ri'
 export const Mode = () => {
     const { systemTheme, theme, setTheme } = useTheme()
     const currentTheme = theme 
-        // === 'system' ? systemTheme : theme
+        === 'system' ? systemTheme : theme
 
     return(
-        
+        <>
         <div className="fixed top-0 right-0">
             {currentTheme === 'dark' ? (
                 <button type='button' aria-label='light mode' onClick={()=>setTheme('light')}
@@ -25,6 +23,8 @@ export const Mode = () => {
                     
                 )}
         </div>
+        </>
+        
 
     )
 }

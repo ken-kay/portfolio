@@ -1,29 +1,32 @@
-// "use client"
+
 export const Firefly = () => {
     return(
-        <div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
+        <>
+            <div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
 
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-            <div className="firefly"></div>
-        </div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+            </div>
+        </>
+        
         
     )
 }

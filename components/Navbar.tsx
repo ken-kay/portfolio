@@ -1,5 +1,3 @@
-// "use client"
-
 import Image from 'next/image'
 // import { IconName } from "react-icons/fa";
 import { 
@@ -27,7 +25,8 @@ import {
 
 export const Navbar = () => {
     return(
-        <header className="sticky top-0 left-0 z-69">
+        <>
+        <header className="fixed top-0 left-0 z-69">
              <ul className="menu flex">
                 <li className="menu_list">
                     <span className="front">
@@ -45,7 +44,7 @@ export const Navbar = () => {
                     <span className="front">
                         <RiContactsLine />
                     </span>
-                        <a href="#" className="side">about</a>
+                        <a href="/about" className="side">about</a>
                 </li>
                 <li className="menu_list">
                     <span className="front">
@@ -57,22 +56,24 @@ export const Navbar = () => {
                     <span className="front">
                         <SiTaichigraphics/>
                     </span>
-                        <a href="#" className="side">pixels</a>
+                        <a href="/pixels" className="side">pixels</a>
                 </li>
                 <li className="menu_list">
                     <span className="front">
                         <IoText />
                     </span>
-                        <a href="#" className="side">text</a>
+                        <a href="/text" className="side">text</a>
                 </li>
                 <li className="menu_list">
                     <span className="front">
                         <PiChatCircleText />
                     </span>
-                        <a href="#" className="side">contact</a>
+                        <a href="/contact" className="side">contact</a>
                 </li>
             </ul>
         </header>
+        </>
+        
 
     )
         

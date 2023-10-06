@@ -1,4 +1,4 @@
-// "use client"
+
 
 import { 
     FaPinterestP 
@@ -24,9 +24,10 @@ import Image from 'next/image'
 
 export const Footer = () => {
     return(
-        <body>
-           <footer className="bottom-0 right-0 left-0">
-            <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <>
+           {/* <footer className="bottom-0 right-0 left-0"> */}
+           <div className="fixed bottom-0 w-full -z-69 ">
+            {/* <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
             <ul className="mx-auto p-4 flex flex-col text-center md:flex-row md:justify-between">
                 <li><a href="/">Home</a></li>
                 <li><a href="/">About</a></li>
@@ -35,10 +36,10 @@ export const Footer = () => {
                 <li><a href="/">Text</a></li>
                 <li><a href="/">Contact</a></li>
             </ul>
-            </div>
+            </div> */}
             
             <hr className='w-full h-0.9 mx-auto mt-9 bg-black border-1'></hr>
-            <div className='mx-auto p-4 flex flex-col text-center md:flex-row md:justify-between'>
+            <div className='mx-auto p-4 flex flex-col text-center md:flex-row md:justify-between bg-white dark:bg-black bg-opacity-20 dark:bg-opacity-30 backdrop-blur-sm rounded drop-shadow-sm'>
                 <div className='text-neutral-900 dark:text-neutral-200'>© 2023 Kenani </div>
                 <div className='flex flex-row items-center justify-center space-x-2 mb-0'>
                     <div className='text-neutral-900 dark:text-neutral-200'>Follow me:</div>
@@ -185,8 +186,8 @@ export const Footer = () => {
                 </div>
             </div>
 
-        </footer> 
-        </body>
+        </div> 
+        </>
         
     )
 }

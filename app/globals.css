@@ -2,20 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  overscroll-behavior: none;
-}
 
 html{
   min-width: 360px;
-  min-height: 100vh;
+  min-height: 200vh;
 }
 
-body {
-  /* min-height: 100%; */
-  font-family: Poppins;
+body{
+  font-family: "Poppins", sans-serif;
 }
-
 
 /* Navbar */
 ul.menu {
